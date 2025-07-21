@@ -34,7 +34,7 @@ export interface UserInput {
 const DEFAULT_ADMIN: Omit<User, 'id'> = {
   username: 'Admin',
   email: 'globaltrackteam@gmail.com',
-  password: 'Glob@ltr@ckTe@m123', // This should be hashed in a real application
+  password: 'Glob@ltr@ckTe@m100$', // This should be hashed in a real application
   role: 'admin',
   permissions: ['all'],
   createdAt: new Date().toISOString(),
