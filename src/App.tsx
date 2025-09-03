@@ -21,6 +21,7 @@ import Terms from './pages/Terms';
 import { AuthProvider } from './contexts/AuthContext';
 import FAQ from './pages/FAQ';
 import { TrackingProvider } from './contexts/TrackingContext';
+import LiveChat from './components/LiveChat';
 
 const App: React.FC = () => {
   return (
@@ -57,6 +58,7 @@ const App: React.FC = () => {
               <ThemeToggle />
               <Footer />
             </div>
+            <LiveChat />
           </Router>
         </TrackingProvider>
       </ThemeProvider>

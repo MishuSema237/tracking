@@ -42,6 +42,7 @@ import {
   FaArrowRight,
 } from 'react-icons/fa';
 import AnimatedCard from '../components/animations/AnimatedCard';
+import ShipmentMap from '../components/ShipmentMap';
 
 const Track: React.FC = () => {
   const { isDarkMode } = useTheme();
@@ -565,6 +566,11 @@ const Track: React.FC = () => {
                 </div>
               </div>
             </div>
+                      </div>
+                      
+                      {/* Shipment Map */}
+                      <div className="mt-6">
+                        <ShipmentMap shipment={shipment} isDarkMode={isDarkMode} />
                       </div>
                       </div>
       ) : (
